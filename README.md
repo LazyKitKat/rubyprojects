@@ -2,7 +2,6 @@
   <img width="460" height="460" src="./src/ruby-logo.png">
 </p>
 
-***
 
 ## My Ruby projects
 
