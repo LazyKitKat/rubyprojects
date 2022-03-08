@@ -20,7 +20,7 @@ This repo includes the following:
 - [x] Stock picker
 - [x] SubStrings
 - [x] Tic Tac Toe
-- [ ] Custom_enumarable_project 
+- [X] Custom_enumarable_project 
 
 Finished projects are marked. Others are yet to be updated. 
 

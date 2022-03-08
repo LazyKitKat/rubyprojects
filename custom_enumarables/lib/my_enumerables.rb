@@ -75,6 +75,22 @@ module Enumerable
     end
   end
 
+  def my_map(&arg)
+
+    arr = []
+
+    if block_given?
+        for i in self 
+          arr << arg.call(i)
+        end
+        arr
+    else
+      for i in self 
+        arr << i
+      end
+    end
+  end
+
   def my_count(&arg)
     count = 0
     if block_given?
@@ -89,6 +105,21 @@ module Enumerable
         count += 1
       end
       count
+    end
+  end
+
+  def my_inject(_init_val, &arg)
+    num = 0
+    if init_val != Nil
+      num = init_val
+    end
+    if block_given?
+      for i in self 
+        num = num + arg.call(i)
+      end
+      num
+    else
+      "Block does not exist"
     end
   end
 
